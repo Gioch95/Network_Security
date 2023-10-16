@@ -22,7 +22,7 @@ while True:
     #se l'evento trigger è stato rilevato e allo stesso tempo il contatore va da 1 a 60
     if (random.choice(event) == -1 or 0) and contatore <= 60:
         print("l'evento è stato rilevato")
-        print("Il dato verrà trasmesso in modalità 0-RTT")
+        print("Il dato verrà trasmesso con modalità 0-RTT")
         os.system(client_0RTT)
         contatore += 1
         time.sleep(1)
@@ -31,7 +31,7 @@ while True:
     #se l'evento trigger è stato rilevato e allo stesso tempo il contatore è uguale a 0
     if (random.choice(event) == -1 or 0) and contatore == 0:
         print("l'evento è stato rilevato")
-        print("il dato è stato trasmesso in modalità 1-RTT")
+        print("il dato verrà trasmesso con modalità 1-RTT")
         os.system(client_1RTT)
         contatore += 1
         time.sleep(1)
